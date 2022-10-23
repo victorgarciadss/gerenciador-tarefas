@@ -1,4 +1,5 @@
 import './App.css';
+import '../src/.env'
 
 import { useState, useEffect } from 'react';
 import { BsTrash, BsBookmarkCheck, BsBookmarkCheckFill } from "react-icons/bs";
@@ -6,7 +7,7 @@ import { BsTrash, BsBookmarkCheck, BsBookmarkCheckFill } from "react-icons/bs";
 // Para acessar a API que criamos ao instalar o json-server e ao monta-la no package.json
 // quando definimos sua pasta e arquivo e o que eles fazem, declaramos essa constante abaixo
 
-const API = "http://localhost:5000";
+const API = process.env.REACT_APP_API_URL;
 
 function App() {
 
